@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Thu Oct  4 15:03:31 2018
+| Host         : MiddleEarth running 64-bit unknown
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |           12 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           24 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              72 |           20 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------+--------------------------------+------------------+----------------+
+|     Clock Signal     |      Enable Signal      |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------------+-------------------------+--------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | deb_btn2/duty_1r_reg[2] | deb_btn3/duty_1r_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn0/duty_2b_reg[2] | deb_btn3/duty_2b_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn0/duty_1b_reg[2] | deb_btn3/duty_1b_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn0/duty_0b_reg[2] | deb_btn3/duty_0b_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn1/duty_1g_reg[2] | deb_btn3/duty_1g_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn1/duty_0g_reg[2] | deb_btn3/duty_0g_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn1/duty_3g_reg[2] | deb_btn3/duty_3g_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn2/duty_3r_reg[2] | deb_btn3/duty_3r_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn2/duty_2r_reg[2] | deb_btn3/duty_2r_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn0/duty_3b_reg[2] | deb_btn3/duty_3b_reg[5]_0      |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn1/duty_2g_reg[2] | deb_btn3/duty_2g_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | deb_btn2/duty_0r_reg[2] | deb_btn3/duty_0r_reg[5]        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG |                         | deb_btn1/counter[0]_i_1__0_n_0 |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG |                         | deb_btn0/counter[0]_i_1_n_0    |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG |                         | deb_btn3/counter[0]_i_1__2_n_0 |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG |                         | deb_btn2/counter[0]_i_1__1_n_0 |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG |                         |                                |               24 |             44 |
++----------------------+-------------------------+--------------------------------+------------------+----------------+
+
+
