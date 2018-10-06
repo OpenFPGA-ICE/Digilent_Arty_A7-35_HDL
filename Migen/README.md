@@ -13,6 +13,12 @@ A build directory will be created and will be populated with the .xpr,
 The bitstream file (top.bit) can be loaded directly on the FPGA using Vivado
 Hardware Manager.
 
+The environment can be composed of only Migen, or part of a LiteX build
+environment.<br/>
+For more information on Migen and LiteX, check out:
+* [Migen Manual](https://m-labs.hk/migen/manual/)
+* [LiteX GitHub homepage](https://github.com/enjoy-digital/litex)
+
 
 
 ## Projects descriptions
@@ -23,8 +29,8 @@ This was a small project aiming at the development of the debouncing code.
 The brightness of the RGB LEDs are varied using 2 buttons which increase
 or decrease the PWM duty cycle.
 
-BTN0: decrease brightness<br/>
-BTN1: increase brightness<br/>
+BTN1: decrease brightness<br/>
+BTN2: increase brightness<br/>
 
 
 

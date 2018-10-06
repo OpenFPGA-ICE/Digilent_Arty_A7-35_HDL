@@ -7,9 +7,5 @@ and VHDL sources are written in Hardware Description Language while the Migen
 sources are written in Python v3. The latter are compiled using the Migen/LiteX
 environment.
 
-For more information on Migen and LiteX, check out:
-* [Migen Manual](https://m-labs.hk/migen/manual/)
-* [LiteX GitHub homepage](https://github.com/enjoy-digital/litex)
-
-Further descriptions of the individual projects are given in the README's
-inside every directory.
+More information on the individual projects and Migen are given in the
+README's inside every directory.
