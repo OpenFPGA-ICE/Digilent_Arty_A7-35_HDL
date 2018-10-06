@@ -1,6 +1,6 @@
 # Verilog Projects
 
-Projects using source files written in VHDL hardware description
+Projects using source files written in Verilog hardware description
 language. Each directory is a different project. A project can be loaded
 by opening the .xpr file in each directory with the Xilinx Vivado SDK.
 
@@ -12,9 +12,9 @@ Manager. The bitstream is main.bit file at<br/>
 Project directory > Project.runs > impl_1 > main.bit
 
 
-## Projects description
+## Projects descriptions
 
-### **led_brightness**
+* ### led_brightness
 
 This was a small project aiming at the development of the debouncing code.
 The brightness of the RGB LEDs are varied using 2 buttons which increase
@@ -25,7 +25,7 @@ BTN1: increase brightness<br/>
 
 
 
-### **stopwatch**
+* ### stopwatch
 
 Binary stopwatch implemented using the 4 monochromatic LEDs, 4 RGB LEDs. *SW3* is
 used to start and stop the counter. When the switch is in the up position, the
@@ -42,7 +42,7 @@ BTN3: reset<br/>
 
 
 
-### **traffic_lights**
+* ### traffic_lights
 
 Program to simulate traffic lights using the RGB LEDs. LD1--LD3 are for cars
 while LD0 is for pedestrians. LD0 switches between red and green. A complete
@@ -59,7 +59,7 @@ LD3: cars green<br/>
 
 
 
-### **colour_chooser1**
+* ### colour_chooser1
 
 Program to simultaneously light up the 4 RGB LEDs to a colour
 which the user chooses. The level of each colour is adjusted
@@ -87,7 +87,7 @@ Initially, all the LEDs are off, i.e. PWM duty level 0.
 
 
 
-### **colour_chooser2**
+* ### colour_chooser2
 
 The program allows the user to light up each one of the four RGB
 LEDs to any colour using different R, G and B combinations on

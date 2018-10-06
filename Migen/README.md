@@ -1,15 +1,18 @@
-# VHDL Projects
+# Migen Projects
 
-Projects using source files written in VHDL hardware description
-language. Each directory is a different project. A project can be loaded
-by opening the .xpr file in each directory with the Xilinx Vivado SDK.
+Projects source files written in Python3 and making use of the Migen HDL
+generator. Each script is a different project, which usually has a counterpart
+in the VHDL or Verilog projects section. A Migen script is compiled by running
+the following in an appropriately set up environment:
+```
+$ python3 SCRIPTNAME
+```
+A build directory will be created and will be populated with the .xpr,
+.bit files, along with all the usual Vivado stuff.
 
-The directories contain the whole project with the compiled files as well.
-We were working with the Vivado WebKit version 2018.1.
+The bitstream file (top.bit) can be loaded directly on the FPGA using Vivado
+Hardware Manager.
 
-The bitstream file can be loaded directly on the FPGA using Vivado Hardware
-Manager. The bitstream is main.bit file at<br/>
-Project directory > Project.runs > impl_1 > main.bit
 
 
 ## Projects descriptions
