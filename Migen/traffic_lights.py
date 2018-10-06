@@ -1,12 +1,30 @@
 #
 #  traffic_lights.py
+#  Program to simulate traffic lights on the Arty A7 using the RGB LEDs.
 #
-#  Program to implement traffic lights on the Arty A7 using all the LEDs and a
-#  button to request crossing for pedestrians.
+#  Copyright (C) 2018  Nitish Ragoomundun, Mauritius
 #
-#  Button BTN3 is used to request an unscheduled change, else it will take
-#  some time before the pedestrian can cross.
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
 #
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+
+#
+#  LD1-LD3 are for cars while LD0 is for pedestrians and will switch between
+#  red and green.  One cycle takes around 1min 20s. The lights are green for
+#  cars for around 1 minute. The press of BTN3 can bring this down to 20s as
+#  BTN3 is set to be used by pedestrian to request crossing.
+#
+
 
 
 from migen import *

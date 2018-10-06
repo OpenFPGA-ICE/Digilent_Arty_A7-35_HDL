@@ -1,19 +1,44 @@
 #
 #  colour_chooser1.py
+#  Program to freely choose colour of the RGB LEDs
 #
+#  Copyright (C) 2018  Nitish Ragoomundun, Mauritius
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+
 #  Program to simultaneously light up the 4 RGB LEDs to a colour
 #  which the user chooses. The level of each colour is adjusted
 #  using the buttons.
-#  BTN2: R, BTN1: G, BTN0: B.
+#  BTN2: R, BTN1: G, BTN0: B
 #
 #  The position of the switches of the same index determine if
 #  the change is an increment or decrement. If the switch is up
-#  the corresponding level will be increased if the button is
-#  pressed, and decreased otherwise.
-#  SW2: R, SW1: G, SW0: B.
+#  the corresponding level will be increased when the button is
+#  pressed, but decreased otherwise.
+#  SW2: R, SW1: G, SW0: B
+#
+#  *e.g. If SW2 and SW0 are up, but SW1 is down,<br/>
+#  when BTN2 will be pressed, level of R will increase,<br/>
+#  when BNT0 will be pressed, level of B will increase,<br/>
+#  but when BTN1 will be pressed, level of G will decrease.*
 #
 #  Initially, all the LEDs are off, i.e. PWM duty level 0.
 #
+
+
+
 
 from migen import *
 from migen.build.generic_platform import *
