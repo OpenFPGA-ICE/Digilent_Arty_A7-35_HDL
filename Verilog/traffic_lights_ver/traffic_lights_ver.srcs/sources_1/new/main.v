@@ -31,7 +31,7 @@
 // Description: Program to control traffic lights. LD1-LD3 are for cars while LD0
 //              is for pedestrians and will switch between red and green.
 //              One cycle takes around 1min 20s. The lights are green for cars for
-//              around 1 minute. The press os BTN3 can bring this down to 20s as
+//              around 1 minute. The press of BTN3 can bring this down to 20s as
 //              BTN3 is set to be used by pedestrian to request crossing.
 // 
 // Dependencies: PWMLED.v, clockdivider.v, debounce.v
