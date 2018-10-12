@@ -18,7 +18,6 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-
 #  Program to light up the 4 RGB LEDs individually to different
 #  colours set by  the user through the operation of buttons 0, 1
 #  and 2, which modify the RGB levels distinctly;
@@ -40,6 +39,7 @@
 #  Button BTN3 is used to reset the duty level of the active LED(s)
 #  to 0.
 #
+
 
 from migen import *
 from migen.build.generic_platform import *
@@ -89,8 +89,6 @@ class Platform(XilinxPlatform):
         XilinxPlatform.do_finalize(self, fragment);
 
 ###  END Describe platform  ###
-
-
 
 
 
